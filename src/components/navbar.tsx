@@ -8,12 +8,12 @@ import {
 import { Bars2Icon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
 import { Link } from './link'
-import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
   { href: '#servizi', label: 'Servizi' },
   { href: '#zone', label: 'Zone servite' },
+  { href: '#faq', label: 'FAQ' },
   { href: '#contatti', label: 'Contatti' },
 ]
 
@@ -76,13 +76,14 @@ function MobileNav() {
 
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
   return (
-    <Disclosure as="header" className="pt-12 sm:pt-16">
+    <Disclosure as="header" className="pt-8 sm:pt-10">
       <PlusGrid>
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
-              <Link href="/" title="Home">
-                <Logo className="h-9" />
+              <Link href="/" title="Carroattrezzi Brescia home" className="flex items-center gap-3">
+                <span className="flex size-10 items-center justify-center rounded-xl bg-[#132844] text-xs font-black text-[#f5c451]">CB</span>
+                <span className="hidden text-sm font-black uppercase tracking-[0.12em] text-[#132844] sm:inline">Carroattrezzi Brescia</span>
               </Link>
             </PlusGridItem>
             {banner && (
