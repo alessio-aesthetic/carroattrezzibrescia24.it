@@ -111,8 +111,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
               <Link href="/" title="Carroattrezzi Brescia home" className="flex items-center gap-3">
-                <span className="flex size-10 items-center justify-center rounded-xl bg-[#132844] text-xs font-black text-[#f5c451]">CB</span>
-                <span className="hidden text-sm font-black uppercase tracking-[0.12em] text-[#132844] sm:inline">Carroattrezzi Brescia</span>
+                <img src="/logo.svg" alt="Carroattrezzi Brescia" className="h-12 w-auto max-w-[250px] object-contain" />
               </Link>
             </PlusGridItem>
             {banner && (

@@ -1,4 +1,4 @@
-export const site = {
+﻿export const site = {
   name: 'Carroattrezzi Brescia 24H',
   city: 'Brescia',
   phone: '030 204 1924',
@@ -24,7 +24,8 @@ export const zones = ['Brescia', 'Roncadelle', 'San Zeno Naviglio', 'Borgosatoll
 export const faqs = [
   ['Quanto tempo serve per ricevere un carroattrezzi a Brescia?', 'Dipende dal punto in cui si trova il veicolo, dal traffico e dal tipo di intervento. Comunicare posizione e problema in modo preciso permette di organizzare il recupero con maggiore efficienza.'],
   ['Posso scegliere dove portare l’auto?', 'Sì. Puoi indicare un’officina, una carrozzeria, un deposito, la tua abitazione o un altro indirizzo concordato prima dell’intervento.'],
-  ['Intervenite anche per moto e furgoni?', 'Sì. È utile indicare subito modello e dimensioni del mezzo, così si può valutare l’attrezzatura più adatta al recupero.'],
+  ['Intervenite anche per moto e furgoni?', 'Sì. Ãˆ utile indicare subito modello e dimensioni del mezzo, così si può valutare l’attrezzatura più adatta al recupero.'],
   ['Cosa devo fare se l’auto è ferma in una strada trafficata?', 'Metti in sicurezza le persone, accendi le luci di emergenza e, se possibile, raggiungi una posizione protetta. Durante la chiamata comunica direzione, carreggiata e riferimenti visibili.'],
   ['Il prezzo viene spiegato prima?', 'Raccogliamo posizione, mezzo, problema e destinazione per fornire indicazioni coerenti prima di organizzare l’uscita.'],
 ] as const
+
