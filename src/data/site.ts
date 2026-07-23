@@ -6,6 +6,7 @@ export const site = {
   address: 'Via Antonio Allegri, 8725124 Brescia BS',
   email: 'assistenza@carroattrezzibrescia24.it',
   domain: 'https://carroattrezzibrescia24.it',
+  template: 'radiant',
 } as const
 
 export const services = [

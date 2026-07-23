@@ -14,3 +14,6 @@
     transform: translateX(var(--move-x-to));
   }
 }
+
+/* Distinct Radiant composition remains intentionally separate. */
+
