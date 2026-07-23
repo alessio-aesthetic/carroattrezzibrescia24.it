@@ -33,7 +33,7 @@ function DesktopNav() {
       ))}
       <PlusGridItem className="relative flex items-center px-4 py-3 text-base font-medium text-gray-950">
         <details className="group">
-          <summary className="cursor-pointer list-none">Servizi <span className="text-xs">Ã¢Å’â€ž</span></summary>
+          <summary className="cursor-pointer list-none">Servizi <span className="text-xs">v</span></summary>
           <div className="absolute left-0 top-full z-20 mt-2 grid w-[26rem] grid-cols-2 gap-x-5 gap-y-2 rounded-2xl border border-black/10 bg-white p-5 text-sm shadow-xl">
             {services.map((service) => <Link key={service.slug} href={`/servizi/${service.slug}`} className="py-1 font-medium text-gray-800 hover:text-[#b45309]">{service.title}</Link>)}
           </div>
@@ -41,7 +41,7 @@ function DesktopNav() {
       </PlusGridItem>
       <PlusGridItem className="relative flex items-center px-4 py-3 text-base font-medium text-gray-950">
         <details className="group">
-          <summary className="cursor-pointer list-none">Zone <span className="text-xs">Ã¢Å’â€ž</span></summary>
+          <summary className="cursor-pointer list-none">Zone <span className="text-xs">v</span></summary>
           <div className="absolute right-0 top-full z-20 mt-2 grid w-[24rem] grid-cols-2 gap-x-5 gap-y-2 rounded-2xl border border-black/10 bg-white p-5 text-sm shadow-xl">
             {zones.map((zone) => <Link key={zone} href={'/zone/' + zone.toLowerCase().replaceAll(' ', '-')} className="text-sm font-medium text-gray-800">Carroattrezzi a {zone}</Link>)}
           </div>
