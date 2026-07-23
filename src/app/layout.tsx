@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     default: 'Carroattrezzi a Brescia 24H | Soccorso Stradale',
   },
   description: 'Carroattrezzi a Brescia attivo 24 ore su 24 per traino auto, recupero veicoli e soccorso stradale rapido.',
+  icons: { icon: "/favicon.svg" },
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Carroattrezzi a Brescia 24H | Soccorso Stradale',
