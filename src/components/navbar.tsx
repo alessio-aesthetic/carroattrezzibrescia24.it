@@ -9,6 +9,7 @@ import { Bars2Icon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
 import { Link } from './link'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
+import { services, zones } from '@/data/site'
 
 const links = [
   { href: '#servizi', label: 'Servizi' },
@@ -20,7 +21,7 @@ const links = [
 function DesktopNav() {
   return (
     <nav className="relative hidden lg:flex">
-      {links.map(({ href, label }) => (
+      {links.slice(2).map(({ href, label }) => (
         <PlusGridItem key={href} className="relative flex">
           <Link
             href={href}
@@ -30,6 +31,22 @@ function DesktopNav() {
           </Link>
         </PlusGridItem>
       ))}
+      <PlusGridItem className="relative flex items-center px-4 py-3 text-base font-medium text-gray-950">
+        <details className="group">
+          <summary className="cursor-pointer list-none">Servizi <span className="text-xs">Ã¢Å’â€ž</span></summary>
+          <div className="absolute left-0 top-full z-20 mt-2 grid w-[26rem] grid-cols-2 gap-x-5 gap-y-2 rounded-2xl border border-black/10 bg-white p-5 text-sm shadow-xl">
+            {services.map((service) => <Link key={service.slug} href={`/servizi/${service.slug}`} className="py-1 font-medium text-gray-800 hover:text-[#b45309]">{service.title}</Link>)}
+          </div>
+        </details>
+      </PlusGridItem>
+      <PlusGridItem className="relative flex items-center px-4 py-3 text-base font-medium text-gray-950">
+        <details className="group">
+          <summary className="cursor-pointer list-none">Zone <span className="text-xs">Ã¢Å’â€ž</span></summary>
+          <div className="absolute right-0 top-full z-20 mt-2 grid w-[24rem] grid-cols-2 gap-x-5 gap-y-2 rounded-2xl border border-black/10 bg-white p-5 text-sm shadow-xl">
+            {zones.map((zone) => <Link key={zone} href={'/zone/' + zone.toLowerCase().replaceAll(' ', '-')} className="text-sm font-medium text-gray-800">Carroattrezzi a {zone}</Link>)}
+          </div>
+        </details>
+      </PlusGridItem>
     </nav>
   )
 }
@@ -49,6 +66,18 @@ function MobileNav() {
   return (
     <DisclosurePanel className="lg:hidden">
       <div className="flex flex-col gap-6 py-4">
+        <details>
+          <summary className="cursor-pointer list-none text-base font-medium text-gray-950">Servizi</summary>
+          <div className="mt-3 grid gap-3 border-l border-black/10 pl-4">
+            {services.map((service) => <Link key={service.slug} href={`/servizi/${service.slug}`} className="text-sm font-medium text-gray-800">{service.title}</Link>)}
+          </div>
+        </details>
+        <details>
+          <summary className="cursor-pointer list-none text-base font-medium text-gray-950">Zone servite</summary>
+          <div className="mt-3 grid gap-3 border-l border-black/10 pl-4">
+            {zones.map((zone) => <Link key={zone} href={'/zone/' + zone.toLowerCase().replaceAll(' ', '-')} className="text-sm font-medium text-gray-800">Carroattrezzi a {zone}</Link>)}
+          </div>
+        </details>
         {links.map(({ href, label }, linkIndex) => (
           <motion.div
             initial={{ opacity: 0, rotateX: -90 }}

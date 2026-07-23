@@ -1,5 +1,6 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
+import { CookieBanner } from '@/components/CookieBanner'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://carroattrezzibrescia24.it'),
@@ -38,7 +39,7 @@ export default function RootLayout({
           href="/sitemap.xml"
         />
       </head>
-      <body className="text-gray-950 antialiased">{children}</body>
+      <body className="text-gray-950 antialiased">{children}<CookieBanner /></body>
     </html>
   )
 }
