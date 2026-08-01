@@ -12,8 +12,9 @@ export default function Home() {
     <main className="min-h-screen bg-[#f4f1ea] text-[#172235]">
       <header className="sticky top-0 z-40 border-b border-[#172235]/10 bg-[#f4f1ea]/95 backdrop-blur">
         <div className="mx-auto flex min-h-[82px] max-w-[1480px] items-center justify-between gap-5 px-5 lg:px-10">
-          <Link href="/" className="flex h-14 max-w-[220px] items-center overflow-hidden">
-            <img src="/images/logo-brescia.png" alt="Carroattrezzi Brescia 24H" className="max-h-14 w-auto object-contain" />
+          <Link href="/" className="flex items-center gap-3">
+            <img src="/images/brand-brescia.png" alt="" className="h-12 w-12 object-contain" />
+            <span className="text-xs font-black uppercase leading-tight tracking-[.14em]">Carroattrezzi<br /><span className="text-[#b16f00]">Brescia</span></span>
           </Link>
           <nav className="hidden items-center gap-8 text-sm font-bold text-[#435069] lg:flex">
             <a href="#interventi">Interventi</a>
