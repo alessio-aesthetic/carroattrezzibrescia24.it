@@ -1,5 +1,5 @@
-import TailAwesomeBrescia from '@/components/TailAwesomeBrescia'
+import ProprietaryHome from '@/components/ProprietaryHome'
 
 export default function Home() {
-  return <TailAwesomeBrescia />
+  return <ProprietaryHome />
 }
