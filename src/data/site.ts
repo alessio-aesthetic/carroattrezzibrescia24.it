@@ -1,9 +1,9 @@
 ﻿export const site = {
   name: 'Carroattrezzi Brescia 24H',
   city: 'Brescia',
-  phone: '030 204 1924',
-  tel: 'tel:+390302041924',
-  address: 'Via Antonio Allegri, 8725124 Brescia BS',
+  phone: '030 204 1917',
+  tel: 'tel:+390302041917',
+  address: 'Via Luigi Reverberi, 30 - 25128 Brescia BS',
   email: 'assistenza@carroattrezzibrescia24.it',
   domain: 'https://carroattrezzibrescia24.it',
   template: 'radiant',
