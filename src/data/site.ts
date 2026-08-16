@@ -3,7 +3,7 @@
   city: 'Brescia',
   phone: '030 204 1917',
   tel: 'tel:+390302041917',
-  address: 'Via Luigi Reverberi, 30 - 25128 Brescia BS',
+  address: 'V. Valcamonica, 19 - 25132 Brescia BS',
   email: 'assistenza@carroattrezzibrescia24.it',
   domain: 'https://carroattrezzibrescia24.it',
   template: 'radiant',

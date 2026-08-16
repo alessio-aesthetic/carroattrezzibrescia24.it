@@ -22,8 +22,8 @@ export function Footer() {
             <div>
               <p className="text-sm font-semibold text-gray-950/50">Contatti</p>
               <ul className="mt-5 space-y-3 text-sm font-medium text-gray-800">
-                <li>Via Antonio Allegri, 8725124 Brescia BS</li>
-                <li><a href="tel:+390302041924" className="hover:text-[#b45309]">030 204 1924</a></li>
+                <li>V. Valcamonica, 19 - 25132 Brescia BS</li>
+                <li><a href="tel:+390302041917" className="hover:text-[#b45309]">030 204 1917</a></li>
                 <li>Attivi 24 ore su 24</li>
               </ul>
             </div>
