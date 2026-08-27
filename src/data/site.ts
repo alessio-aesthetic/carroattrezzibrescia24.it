@@ -3,7 +3,7 @@
   city: 'Brescia',
   phone: '030 204 1917',
   tel: 'tel:+390302041917',
-  address: 'V. Valcamonica, 19 - 25132 Brescia BS',
+  address: 'Via Carlo Fenzi, 1 - 25135 Brescia BS',
   email: 'assistenza@carroattrezzibrescia24.it',
   domain: 'https://carroattrezzibrescia24.it',
   template: 'radiant',
