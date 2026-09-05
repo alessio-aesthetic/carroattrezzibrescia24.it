@@ -1,6 +1,9 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 import { CookieBanner } from '@/components/CookieBanner'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://carroattrezzibrescia24.it'),
@@ -29,18 +32,8 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
-        />
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="The Radiant Blog"
-          href="/sitemap.xml"
-        />
       </head>
-      <body className="text-gray-950 antialiased">{children}<CookieBanner /></body>
+      <body className={inter.variable + ' text-gray-950 antialiased'}>{children}<CookieBanner /></body>
     </html>
   )
 }
