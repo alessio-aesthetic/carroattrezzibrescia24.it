@@ -42,7 +42,7 @@ export default function TailAwesomeBrescia() {
         <section className="bg-[#e85d32] py-16"><Container className="flex flex-col justify-between gap-8 text-white lg:flex-row lg:items-center"><div><p className="text-xs font-black uppercase tracking-[0.24em] text-orange-100">Serve assistenza?</p><h2 className="mt-3 text-4xl font-black tracking-[-0.04em] sm:text-5xl">Chiama e raccontaci cosa Ã¨ successo.</h2></div><Link href={site.tel} className="inline-flex rounded-lg bg-[#0f3d6e] px-7 py-4 text-center text-sm font-black text-white shadow-xl shadow-orange-950/20">Chiama {site.phone}</Link></Container></section>
       </main>
 
-      <footer className="bg-white py-10"><Container className="flex flex-col justify-between gap-5 text-sm text-slate-500 sm:flex-row"><div><p className="font-black text-[#0f3d6e]">{site.name}</p><p className="mt-2">{site.address}</p><p>{site.email}</p></div><Link href={site.tel} className="font-black text-[#e85d32]">{site.phone}</Link></Container></footer>
+      <footer className="bg-white py-10"><Container className="flex flex-col justify-between gap-5 text-sm text-slate-500 sm:flex-row"><div><p className="font-black text-[#0f3d6e]">{site.name}</p><p>{site.email}</p></div><Link href={site.tel} className="font-black text-[#e85d32]">{site.phone}</Link></Container></footer>
     </div>
   )
 }
