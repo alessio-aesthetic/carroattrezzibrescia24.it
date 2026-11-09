@@ -3,7 +3,7 @@
   city: 'Brescia',
   phone: '030 204 1917',
   tel: 'tel:+390302041917',
-  address: 'Via Antonio Allegri, 87 - 25124 Brescia BS',
+
   email: 'assistenza@carroattrezzibrescia24.it',
   domain: 'https://carroattrezzibrescia24.it',
   template: 'radiant',
