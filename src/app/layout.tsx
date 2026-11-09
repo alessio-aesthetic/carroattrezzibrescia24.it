@@ -1,6 +1,5 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
-import { CookieBanner } from '@/components/CookieBanner'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' })
@@ -33,7 +32,8 @@ export default function RootLayout({
     <html lang="it">
       <head>
       </head>
-      <body className={inter.variable + ' text-gray-950 antialiased'}>{children}<CookieBanner /></body>
+      <body className={inter.variable + ' text-gray-950 antialiased'}>{children}<script defer src="/privacy-notice.js" />
+      </body>
     </html>
   )
 }
